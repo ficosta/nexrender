@@ -9,6 +9,8 @@ on:
 
 jobs:
   release:
+    # macOS disabled: GitHub-hosted macOS minutes are billed 10x. Uncomment to re-enable.
+    if: false
     runs-on: macos-latest
     steps:
     - uses: actions/setup-node@v3
